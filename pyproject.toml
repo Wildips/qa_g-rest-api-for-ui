@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "qa-g-rest-api-for-ui"
+version = "0.1.0"
+description = ""
+authors = ["Vitaliy Zakharov <zak125@mail.ru>"]
+readme = "README.md"
+packages = [{include = "qa_g_rest_api_for_ui"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.4.3"
+allure-pytest = "^2.13.2"
+requests = "^2.31.0"
+jsonschema = "^4.20.0"
+selene = "2.0.0rc4"
+selenium = ">=4.14.0,<4.15.0"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
